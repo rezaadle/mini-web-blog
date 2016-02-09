@@ -3,12 +3,17 @@
 <html>
 	<head>
 		<title>web template</title>
+		<link rel="stylesheet" type="text/css" href="static/main.css">
 	</head>
 	
 	<body>
-		<h1 style="text-align: center">Welcome, {{ name }}</h1>
+		<a href="/blog" class="main-title">
+			Welcome!
+		</a>
 
-		{% block content %}
-		{% endblock %}
+		<div id="content">
+			{% block content %}
+			{% endblock %}
+		</div>
 	</body>
 </html>
