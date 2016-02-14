@@ -1,7 +1,10 @@
 {% extends "main.html" %}
 
 {% block content %}
-
+	<a href="/blog/newpost" class="main-title">
+    	Write new post
+  	</a>
+  	<br>
 	{% for p in posts %}
 		{{ p.render() | safe }}
 		<br><br>

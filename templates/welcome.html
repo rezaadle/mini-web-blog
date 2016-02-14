@@ -1,23 +1,12 @@
 {% extends "main.html" %}
 
 {% block content %}
-<form>
-	<h2>Add an Item</h2>
-	<input type="text" name="item">
-	{% if items %}
-		{% for item in items %}
-			<input type="hidden" name="item" value="{{item}}">
-		{% endfor %}
-	{% endif %}
-	<button>Add</button>
-	{% if items %}
-		<br><br>
-		<h2>To Do Items:</h2>
-		<ul>
-			{% for item in items %}
-				<li>{{ item }}</li>
-			{% endfor %}
-		</ul>
-	{% endif %}
-</form>
+<div class="main-title">
+	Welcome to my web!
+</div>
+<br>
+<ul>
+	<li><a href="/blog"> Go to blog post </a></li>
+	<li><a href="/signup"> Write new post </a></li>
+</ul>
 {% endblock %}

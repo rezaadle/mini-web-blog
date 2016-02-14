@@ -1,7 +1,9 @@
 {% extends "main.html" %}
 
 {% block content %}
-
+	<a href="/blog" class="main-title">
+    	Blog post
+  	</a>
+  	<br>
 	{{ post.render() | safe }}
-
 {% endblock %}
