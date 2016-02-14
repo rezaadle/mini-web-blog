@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% block content %}
+<form method="post">
+	<h2>Please Signup</h2>
+	<label> 
+		<div> Username: </div>
+		<input type="text" name="username" value="{{username}}">
+		<em class="error"> {{ error_username }} </em>
+	</label>
+	<br>
+	<label>
+		<div> Password: </div>
+		<input type="password" name="password" value="">
+		<em class="error"> {{ error_password }} </em>
+	</label>
+	<br>
+	<label>
+		<div> Verify Password: </div>
+		<input type="password" name="verify" value="">
+		<em class="error"> {{ error_verify }} </em>
+	</label>
+	<br>	
+	<label>
+		<div> Email (optional): </div> 
+		<input type="text" name="email" value="{{email}}">
+		<em class="error"> {{ error_email }} </em>
+	</label>
+	<br>
+	<input type="submit">
+</form>
+{% endblock %}
