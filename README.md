@@ -1,2 +1,2 @@
-# My Web Project
-Some web development practices for my project.
+# Mini Web Blog
+Some web development practices for a blog.
